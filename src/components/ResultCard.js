@@ -33,13 +33,13 @@ export const ResultCard = ({movie}) => {
                 <button className="btn" 
                 disabled={watchlistDisabled}
                 onClick={()=> addMovieToWatchlist(movie)}>Add to Watchlist</button>
-            </div>
 
-            <div className="controls">
                 <button className="btn" 
                 disabled={watchedDisabled}
                 onClick={()=> addMovieToWatched(movie)}>Add to Watched</button>
             </div>
+
+            
         </div>
     </div>
   )

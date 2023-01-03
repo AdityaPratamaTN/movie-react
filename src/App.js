@@ -14,9 +14,9 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Watchlist />} />
-        <Route path="/watched" element={<Watched />} />
-        <Route path="/add" element={<Add />} />
+        <Route path="/movie-react/" element={<Watchlist />} />
+        <Route path="/movie-react/watched" element={<Watched />} />
+        <Route path="/movie-react/add" element={<Add />} />
       </Routes>
     </BrowserRouter>
     </GlobalProvider>

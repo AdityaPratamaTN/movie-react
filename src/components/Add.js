@@ -5,10 +5,12 @@ export const Add = () => {
     const [query, setQuery] = useState("");
     const [results, setResults] = useState([]);
 
+    let API_KEY = "YOUR_KEY"
+
     const handleSearch = e => {
         e.preventDefault();
         setQuery(e.target.value);
-        fetch(`https://api.themoviedb.org/3/search/movie?api_key=140b2a236b3a38bd8f7995ecdb9870e1&language=en-US&page=1&include_adult=false&query=${e.target.value}`)
+        fetch(`https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&language=en-US&page=1&include_adult=false&query=${e.target.value}`)
         .then((res) => res.json())
         .then((data) => {
             if(!data.errors){
